@@ -26,15 +26,24 @@
   width: 150px;
 }
 
+.coin-rank {
+  width: 35px; 
+}
+
 .coin img {
   height: 30px;
   width: 30px;
   margin-right: 10px;
 }
 
+.coin-link {
+  text-decoration: none;
+  color: white; 
+}
+
 .coin-symbol {
   text-transform: uppercase;
-  
+
 }
 
 .coin-data {

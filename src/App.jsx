@@ -1,13 +1,15 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import CoinSummary from './components/CoinSummary';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import CoinSummary from './pages/CoinSummary';
+import CoinDetail from './pages/CoinDetail';
 
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <Route exact path='/' component={CoinSummary} />
-      </BrowserRouter>
+        <Route path='/coins/:id' component={CoinDetail} />
+      </Router>
     </div>
   );
 };

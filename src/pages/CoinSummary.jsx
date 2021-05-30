@@ -1,19 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+// import { useParams } from "react-router-dom";
+import coingecko from '../apis/coingecko';
 import './CoinSummary.css';
 
-import Coin from './Coin';
-import Header from './Header';
+import Coin from '../components/Coin';
+import Header from '../components/Header';
 
 function CoinSummary() {
+  // const { id } = useParams();
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState('');
-  const url =
-    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false';
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios(url);
+      const result = await coingecko.get(`/coins/markets/`, {
+        params: {
+          vs_currency: 'usd',
+          order: 'market_cap_desc',
+          per_page: '9',
+          page: 1,
+        },
+      });
+      console.log(result.data); 
       setCoins(result.data);
     };
     fetchData();
@@ -45,6 +53,8 @@ function CoinSummary() {
         return (
           <Coin
             key={coin.id}
+            id={coin.id}
+            rank={coin.market_cap_rank}
             name={coin.name}
             price={coin.current_price}
             symbol={coin.symbol}

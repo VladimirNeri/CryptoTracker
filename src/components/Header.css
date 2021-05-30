@@ -19,8 +19,8 @@
   
   display: flex;
   text-align: right;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  width: 250px;
 }
 
 .header-marketcap {

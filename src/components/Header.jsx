@@ -10,7 +10,7 @@ const Header = () => {
         <div className='header-data'>Price</div>
         <div className='header-data'>Volume</div>
         <div className='header-data'>Change</div>
-        <div className='header-marketcap'>MarketCap</div>
+        <div className='header-data'>MarketCap</div>
       </div>
     </div>
   );
