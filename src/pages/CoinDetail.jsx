@@ -73,6 +73,8 @@ const CoinDetail = () => {
   }, [id]);
 
   const renderData = () => {
+    
+
     if (isLoading) {
       return <div>Loading....</div>;
     }
