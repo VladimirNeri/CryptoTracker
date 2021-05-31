@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import { useParams } from "react-router-dom";
 import coingecko from '../apis/coingecko';
 import './CoinSummary.css';
 
@@ -7,7 +6,6 @@ import Coin from '../components/Coin';
 import Header from '../components/Header';
 
 function CoinSummary() {
-  // const { id } = useParams();
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState('');
 
