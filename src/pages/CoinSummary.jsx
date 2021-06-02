@@ -15,7 +15,7 @@ function CoinSummary() {
         params: {
           vs_currency: 'usd',
           order: 'market_cap_desc',
-          per_page: '9',
+          per_page: '100',
           page: 1,
         },
       });

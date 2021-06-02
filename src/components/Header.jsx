@@ -5,6 +5,7 @@ const Header = () => {
   return (
     <div className='header-container'>
       <div className='header-row'>
+        <div className='header-rank'>#</div>
         <div className='header-data'>Coin</div>
         <div className='header-data'>Symbol</div>
         <div className='header-data'>Price</div>

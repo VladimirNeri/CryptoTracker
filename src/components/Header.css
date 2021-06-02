@@ -18,9 +18,15 @@
 .header-data {
   
   display: flex;
-  text-align: right;
+  text-align: center;
   justify-content: center;
-  width: 250px;
+  width: 450px;
+}
+
+.header-rank {
+  justify-content: center;
+  width: 10px;
+  
 }
 
 .header-marketcap {
