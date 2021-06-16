@@ -28,7 +28,7 @@
 }
 
 .coin-rank {
-  width: 35px; 
+  width: 70px; 
 }
 
 .coin img {
@@ -44,7 +44,7 @@
 
 .coin-symbol {
   text-transform: uppercase;
-
+  color: #8be9fd;
 }
 
 .coin-data {
@@ -56,18 +56,21 @@
 
 .coin-price {
   width: 110px;
-}
 
-.coin-volume {
-  width: 230px;
 }
 
 .coin-marketcap {
-  width: 200px;
+  width: 170px;
+
+}
+
+.coin-volume {
+  width: 170px;
+
 }
 
 .coin-percent {
-  width: 100px;
+  width: 80px;
 }
 
 .red {
