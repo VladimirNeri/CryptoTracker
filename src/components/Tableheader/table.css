@@ -1,8 +1,9 @@
 table {
-  position: sticky;
+  position: fixed;
   position: -webkit-sticky;
   top: 0;
-  
+
+  padding-top: 80px;
 }
 
 .header {
@@ -11,17 +12,19 @@ table {
   width: 1000px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-  border-bottom: 1px solid #d7d7d7;
+  border-bottom: 2px double #d7d7d7;
   
 }
 
 .table-currency {
   margin: auto;
+  padding-right: 20px;
   width: 50%;
 }
 
 .table-price {
   margin: auto;
+  padding-right: 10px;
   width: 50%;
 }
 
