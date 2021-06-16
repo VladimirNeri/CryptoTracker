@@ -8,7 +8,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  height: 80px;
+  height: 50px;
   border-bottom: 1px solid #d7d7d7;
   width: 1000px;
 }
@@ -70,9 +70,9 @@
 }
 
 .red {
-  color: #f00606;
+  color: #ff5555;
 }
 
 .green {
-  color: #11d811;
+  color: #50fa7b;
 }

@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import coingecko from '../apis/coingecko';
-import './CoinSummary.css';
-
-import Coin from '../components/Coin';
-import Header from '../components/Header';
+import coingecko from '../../apis/coingecko';
+import Coin from '../Coin';
+import Tableheader from '../Tableheader';
 
 function CoinSummary() {
   const [coins, setCoins] = useState([]);
-  const [search, setSearch] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,34 +16,17 @@ function CoinSummary() {
           page: 1,
         },
       });
-      console.log(result.data); 
+      console.log(result.data);
       setCoins(result.data);
     };
     fetchData();
   }, []);
 
-  const handleChange = (e) => {
-    setSearch(e.target.value);
-  };
-
-  const filteredCoins = coins.filter((coin) =>
-    coin.name.toLowerCase().includes(search.toLowerCase())
-  );
+  const filteredCoins = coins.filter((coin) => coin.name.toLowerCase());
 
   return (
     <div className='coin-app'>
-      <div className='coin-search'>
-        <h1 className='coin-text'>Search a currency</h1>
-        <form>
-          <input
-            className='coin-input'
-            type='text'
-            onChange={handleChange}
-            placeholder='Search'
-          />
-        </form>
-      </div>
-      <Header />
+      <Tableheader />
       {filteredCoins.map((coin) => {
         return (
           <Coin

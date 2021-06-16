@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Historychart from '../components/HistoryChart';
-import CoinData from '../components/CoinData';
-import CoinDesc from '../components/CoinDesc';
-import coingecko from '../apis/coingecko';
+
+import Historychart from '../HistoryChart';
+import CoinData from '../CoinData';
+import CoinDesc from '../CoinDesc';
+import coingecko from '../../apis/coingecko';
 
 const CoinDetail = () => {
   const { id } = useParams();
@@ -73,16 +74,16 @@ const CoinDetail = () => {
   }, [id]);
 
   const renderData = () => {
-    
-
     if (isLoading) {
       return <div>Loading....</div>;
     }
     return (
-      <div className='coinlist'>
-        <Historychart data={coinData} />
-        <CoinData data={coinData.detail} />
-        <CoinDesc data={coinData.desc} />
+      <div>
+        <div>
+          <Historychart data={coinData} />
+          <CoinData data={coinData.detail} />
+          <CoinDesc data={coinData.desc} />
+        </div>
       </div>
     );
   };
