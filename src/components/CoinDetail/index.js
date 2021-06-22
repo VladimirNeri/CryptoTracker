@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-
+import './coindetail.css';
 import Historychart from '../HistoryChart';
 import CoinData from '../CoinData';
 import CoinDesc from '../CoinDesc';
 import coingecko from '../../apis/coingecko';
+
 
 const CoinDetail = () => {
   const { id } = useParams();
@@ -69,7 +70,6 @@ const CoinDetail = () => {
       });
       setIsLoading(false);
     };
-
     fetchData();
   }, [id]);
 
@@ -78,12 +78,10 @@ const CoinDetail = () => {
       return <div>Loading....</div>;
     }
     return (
-      <div>
-        <div>
-          <Historychart data={coinData} />
-          <CoinData data={coinData.detail} />
-          <CoinDesc data={coinData.desc} />
-        </div>
+      <div className='detail-container'>
+        <CoinData data={coinData.detail} />
+        <Historychart data={coinData} />
+        <CoinDesc data={coinData.desc} />
       </div>
     );
   };

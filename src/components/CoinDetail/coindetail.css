@@ -1,0 +1,42 @@
+.detail-container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.coin-info-name {
+  float: left;
+  
+}
+
+.coin-image img {
+  height: 80px;
+  width: 80px;
+  float: right;
+  
+}
+
+.coin-info-price {
+  float: left;
+}
+
+.coin-history {
+
+ width: auto; 
+}
+
+.negative {
+  color: #ff5555;
+}
+
+.positive {
+  color: #50fa7b;
+}
+
+.coin-description {
+  grid-column: 1 / span 2; 
+}
+
+
+
+

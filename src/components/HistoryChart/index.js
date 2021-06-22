@@ -43,27 +43,27 @@ const HistoryChart = ({ data }) => {
     }
   });
 
-  const renderPrice = () => {
-    if (detail) {
-      return (
-        <>
-          <p className='my-0'>${detail.current_price.toFixed(2)}</p>
-          <p
-            className={
-              detail.price_change_24h < 0
-                ? 'text-danger my-0'
-                : 'text-success my-0'
-            }
-          >
-            {detail.price_change_percentage_24h.toFixed(2)}%
-          </p>
-        </>
-      );
-    }
-  };
+  // const renderPrice = () => {
+  //   if (detail) {
+  //     return (
+  //       <>
+  //         <p className='my-0'>${detail.current_price.toFixed(2)}</p>
+  //         <p
+  //           className={
+  //             detail.price_change_24h < 0
+  //               ? 'negative'
+  //               : 'positive'
+  //           }
+  //         >
+  //           {detail.price_change_percentage_24h.toFixed(2)}%
+  //         </p>
+  //       </>
+  //     );
+  //   }
+  // };
   return (
-    <div className='bg-white border mt-2 rounded p-3'>
-      <div>{renderPrice()}</div>
+    <div className='coin-history'>
+      {/* <div>{renderPrice()}</div> */}
       <div>
         <canvas ref={chartRef} id='myChart' width={250} height={250}></canvas>
       </div>

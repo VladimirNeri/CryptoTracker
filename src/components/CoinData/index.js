@@ -1,49 +1,70 @@
-import React from "react";
+import React from 'react';
 
 const CoinData = ({ data }) => {
   const renderData = () => {
     if (data) {
       return (
-        <div className="bg-white mt-3 p-2 rounded border row">
-          <div className="col-sm">
-            <div className="d-flex flex-column">
-              <span className="text-muted coin-data-category">Market Cap</span>
-              <span>{data.market_cap}</span>
+        <div className='coin-info'>
+          
+            <div className='coin-info-title'>
+              <h1 className='coin-info-name'>
+                {data.name}
+              </h1>
+
+              <div className='coin-image'>
+                <img src={data.image} alt='crypto' />
+              </div>
+
             </div>
-            <hr />
-            <div className="d-flex flex-column">
-              <span className="text-muted coin-data-category">
-                Total Supply
+            
+            <h2 className='coin-info-price'>
+              ${data.current_price.toFixed(2)}</h2>
+            <p
+            className={
+              data.price_change_24h < 0
+                ? 'negative'
+                : 'positive'
+            }
+          > 
+            {data.price_change_percentage_24h.toFixed(2)}%
+          </p>
+            <div className='coin-info-marketcap'>
+              <span className=''>Market Cap: </span>
+              <span>${data.market_cap.toLocaleString()}</span>
+            </div>
+
+
+            <div className=''>
+              <span className=''>
+                Total Supply:  
               </span>
-              <span>{data.total_supply}</span>
+              <span> {data.total_supply}</span>
+            </div>
+          
+
+          <div className=''>
+            <div className=''>
+              <span className=''>Volume(24H): </span>
+              <span>{data.total_volume.toLocaleString()}</span>
+            </div>
+
+ 
+
+            <div className=''>
+              <span className=''>High 24h: </span>
+              <span>${data.high_24h.toLocaleString()}</span>
             </div>
           </div>
 
-          <div className="col-sm">
-            <div className="d-flex flex-column">
-              <span className="text-muted coin-data-category">Volume(24H)</span>
-              <span>{data.total_volume}</span>
-            </div>
-            <hr />
-            <div className="d-flex flex-column">
-              <span className="text-muted coin-data-category">high 24h</span>
-              <span>{data.high_24h}</span>
+          <div className=''>
+            
+  
+            <div className=''>
+              <span className=''>Low 24h: </span>
+              <span>${data.low_24h.toLocaleString()}</span>
             </div>
           </div>
 
-          <div className="col-sm">
-            <div className="d-flex flex-column">
-              <span className="text-muted coin-data-category">
-                Circulating Supply
-              </span>
-              <span>{data.circulating_supply}</span>
-            </div>
-            <hr />
-            <div className="d-flex flex-column">
-              <span className="text-muted coin-data-category">low 24h</span>
-              <span>{data.low_24h}</span>
-            </div>
-          </div>
         </div>
       );
     }
