@@ -30,8 +30,8 @@ const HistoryChart = ({ data }) => {
             {
               label: `${detail.name} price`,
               data: determineTimeFormat(),
-              backgroundColor: 'rgba(174, 305, 194, 0.5)',
-              borderColor: 'rgba(174, 305, 194, 0.4',
+              backgroundColor: 'rgb(255, 184, 108)',
+              borderColor: 'rgb(255, 184, 108)',
               pointRadius: 0,
             },
           ],

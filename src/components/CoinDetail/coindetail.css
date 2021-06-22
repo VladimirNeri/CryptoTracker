@@ -10,14 +10,14 @@
 }
 
 .coin-image img {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width:100px;
   float: right;
   
 }
 
 .coin-info-price {
-  float: left;
+  position: absolute;
 }
 
 .coin-history {
@@ -27,10 +27,12 @@
 
 .negative {
   color: #ff5555;
+  margin-top: 10px; 
 }
 
 .positive {
   color: #50fa7b;
+  margin-top: 10px; 
 }
 
 .coin-description {
