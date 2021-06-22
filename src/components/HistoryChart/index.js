@@ -22,7 +22,7 @@ const HistoryChart = ({ data }) => {
 
   useEffect(() => {
     if (chartRef && chartRef.current && detail) {
-      console.log('yeah');
+      // console.log('yeah');
       const chartInstance = new Chart(chartRef.current, {
         type: 'line',
         data: {
@@ -71,19 +71,19 @@ const HistoryChart = ({ data }) => {
       <div className='chart-button mt-1'>
         <button
           onClick={() => setTimeFormat('24h')}
-          className='btn btn-outline-secondary btn-sm'
+          className='btn 24h'
         >
           24h
         </button>
         <button
           onClick={() => setTimeFormat('7d')}
-          className='btn btn-outline-secondary btn-sm mx-1'
+          className='btn 7d'
         >
           7d
         </button>
         <button
           onClick={() => setTimeFormat('1y')}
-          className='btn btn-outline-secondary btn-sm'
+          className='btn 1y'
         >
           1y
         </button>

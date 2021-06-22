@@ -39,6 +39,22 @@
   grid-column: 1 / span 2; 
 }
 
+.btn {
+  background-color: #282a36;
+  border: none; 
+  color: #ff79c6;
+  width: 28px; 
+  height: 28px; 
+  border-radius: 12px; 
+  text-align: center; 
+  text-decoration: none; 
+  margin-right: 20px; 
+
+}
+
+.btn:active {
+  color: #50fa7b;
+}
 
 
 
