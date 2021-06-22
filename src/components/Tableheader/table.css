@@ -25,23 +25,22 @@ table {
 .table-price {
   margin: auto;
   padding-right: 10px;
-  width: 50%;
+  width: 50px;
 }
 
 .table-marketcap {
 
   margin: auto;
-  width: 50%;
+  width: 50px;
 }
 
 .table-change {
-
   margin: auto;
   width: 50px;
 }
 
 .table-volume {
   margin: auto;
-  width: 50%;
+  width: 50px;
 
 }
