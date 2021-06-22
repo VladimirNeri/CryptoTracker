@@ -1,1 +1,1 @@
-# coinRanking API
+# cryptoTracker API
