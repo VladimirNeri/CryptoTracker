@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { MenuItems } from '../../routes';
 import './Navbar.css';
 
@@ -17,12 +18,20 @@ const Navbar = (props) => {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <a className={item.cName} href={item.url}>
+                <Link className={item.cName} to={item.url} href={item.link}>
                   {item.title}
-                </a>
+                </Link>
               </li>
             );
           })}
+          <a
+            className='nav-github'
+            href='https://github.com/VladimirNeri/CryptoTracker'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Github
+          </a>
         </ul>
       </div>
 

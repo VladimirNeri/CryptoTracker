@@ -31,6 +31,7 @@ const HistoryChart = ({ data }) => {
               label: `${detail.name} price`,
               data: determineTimeFormat(),
               backgroundColor: 'rgb(255, 184, 108)',
+              color: 'rgb(248, 248, 242)',
               borderColor: 'rgb(255, 184, 108)',
               pointRadius: 0,
             },
@@ -64,7 +65,7 @@ const HistoryChart = ({ data }) => {
   return (
     <div className='coin-history'>
       {/* <div>{renderPrice()}</div> */}
-      <div>
+      <div className='chart'>
         <canvas ref={chartRef} id='myChart' width={250} height={250}></canvas>
       </div>
 

@@ -1,32 +1,27 @@
 export const MenuItems = [
   {
     title: 'Home', 
-    url: '#',
-    cName: 'nav-links'
+    url: '/',
+    cName: 'nav-home'
   },
   {
     title: 'Exchanges', 
-    url: '#',
-    cName: 'nav-links'
+    url: '/exchanges',
+    cName: 'nav-exchanges'
   },
   {
     title: 'NFT', 
-    url: '#',
-    cName: 'nav-links'
+    url: '/nft',
+    cName: 'nav-nft'
   },
   {
     title: 'Defi', 
-    url: '#',
-    cName: 'nav-links'
+    url: '/defi',
+    cName: 'nav-defi'
   },
   {
     title: 'News', 
-    url: '#',
-    cName: 'nav-links'
-  },
-  {
-    title: 'Github', 
-    url: '#',
-    cName: 'nav-links'
+    url: 'news',
+    cName: 'nav-news'
   }
 ]
