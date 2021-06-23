@@ -3,7 +3,7 @@ import coingecko from '../../apis/coingecko';
 import Coin from '../Coin';
 import Tableheader from '../Tableheader';
 
-function CoinSummary() {
+const CoinSummary = () => {
   const [coins, setCoins] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function CoinSummary() {
           page: 1,
         },
       });
-      console.log(result.data);
+      // console.log(result.data);
       setCoins(result.data);
     };
     fetchData();

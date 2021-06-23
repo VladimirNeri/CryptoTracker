@@ -3,7 +3,7 @@ import './table.css';
 
 const Tableheader = () => {
   return (
-    <table>
+    <tbody>
       <tr className='header'>
         <th className='table-currency'>Coin</th>
         <th className='table-price'>Price</th>
@@ -11,7 +11,7 @@ const Tableheader = () => {
         <th className='table-change'>24H∆</th>
         <th className='table-volume'>Volume</th>
       </tr>
-    </table>
+    </tbody>
   )
 }
 
