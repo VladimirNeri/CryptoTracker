@@ -1,0 +1,43 @@
+.exchange-container {
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  
+}
+
+.exchange-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #d7d7d7;
+  width: 800px;
+}
+
+.exchange-rank {
+  width: 70px; 
+}
+
+.exchange-name {
+  font-size: 16px; 
+  font-weight: bold; 
+  width: 200px; 
+  color: #8be9fd;
+}
+
+.exchange-score {
+  width: 150px;
+}
+
+.exchange-year {
+  width: 150px; 
+}
+
+.exchange-country {
+  width: 250px; 
+}
+
+.exchange-volume {
+  width: 170px; 
+}

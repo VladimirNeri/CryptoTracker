@@ -1,13 +1,13 @@
-table {
+.table {
   position: fixed;
   position: -webkit-sticky;
   top: 0;
-
   padding-top: 80px;
 }
 
 .header {
   font-size: 18px;
+  font-weight: bold; 
   height: 30px;
   width: 1000px;
   display: grid;

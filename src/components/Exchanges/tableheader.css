@@ -1,0 +1,51 @@
+.table-header-exchange {
+  position: fixed;
+  position: -webkit-sticky;
+  top: 0;
+  padding-top: 80px;
+  margin-left: 100px; 
+  width: 800px;
+  align-items: center;
+  
+}
+
+.header-exchange {
+  font-size: 18px;
+  font-weight: bold; 
+  height: 30px;
+
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-bottom: 2px double #d7d7d7;
+}
+
+.table-exchange {
+  margin: auto;
+  width: 150px;
+}
+
+.table-score {
+  margin: auto;
+  width: 160px;
+  padding-left: 40px;
+
+}
+
+.table-year {
+  margin: auto;
+  width: 160px;
+  padding-left: 20px;
+}
+
+.table-country{
+  margin: auto;
+  width: 160px;
+  padding-left: 15px;
+}
+
+.table-volume {
+  margin: auto;
+  width: 160px;
+  padding-left: 50px;
+}       

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import coingecko from '../../apis/coingecko';
 import Coin from '../Coin';
-import Tableheader from '../Tableheader';
+import Tableheader from './Tableheadersummary';
 
 const CoinSummary = () => {
   const [coins, setCoins] = useState([]);

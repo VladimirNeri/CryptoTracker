@@ -6,6 +6,7 @@ import Exchanges from './pages/Exchanges';
 import NFT from './pages/NFT';
 import Defi from './pages/Defi';
 import News from './pages/News';
+import './App.css'
 
 const App = () => {
   return (
