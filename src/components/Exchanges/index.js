@@ -32,7 +32,7 @@ const Exchanges = () => {
             key={exchange.id}
             id={exchange.id}
             rank={exchange.trust_score_rank}
-            score={exchange.trust_score_rank}
+            score={exchange.trust_score}
             name={exchange.name}
             year={exchange.year_established}
             country={exchange.country}

@@ -6,7 +6,7 @@ const Tableheader = () => {
     <div className='table-header-exchange'>
       <div className='header-exchange'>
         <div className='table-exchange'>Exchange</div>
-        <div className='table-score'>Score</div>
+        <div className='table-score'>Trust Score</div>
         <div className='table-year'>Year</div>
         <div className='table-country'>Country</div>
         <div className='table-volume'>Volume</div>
