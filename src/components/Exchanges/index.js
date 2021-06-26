@@ -14,7 +14,7 @@ const Exchanges = () => {
           page: 1,
         },
       });
-      console.log(result.data);
+      // console.log(result.data);
       setExchanges(result.data);
     };
     fetchData();

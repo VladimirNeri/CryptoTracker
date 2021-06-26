@@ -60,7 +60,7 @@ const CoinDetail = () => {
           },
         }),
       ]);
-      console.log(desc.data.description.en);
+      // console.log(desc.data.description.en);
       setCoinData({
         day: formatData(day.data.prices),
         week: formatData(week.data.prices),
