@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import NFTSummary from '../components/CoinSummary';
+import NFTSummary from '../components/NFT';
 import { Helmet } from 'react-helmet';
 
 const NFT = () => {
