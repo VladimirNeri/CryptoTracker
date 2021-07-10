@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import NFTSummary from '../components/CoinSummary';
 import { Helmet } from 'react-helmet';
 
 const NFT = () => {
@@ -10,6 +11,7 @@ const NFT = () => {
         <meta name='cyrptotracker' content='nft' />
       </Helmet>
       <Navbar />
+      <NFTSummary />
     </div>
   );
 };
