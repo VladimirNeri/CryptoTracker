@@ -1,5 +1,5 @@
 import React from 'react';
-import './tableheadersummary.css'; 
+import './tableheader.css'; 
 
 const Tableheader = () => {
   return (
