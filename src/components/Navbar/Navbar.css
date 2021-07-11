@@ -28,6 +28,12 @@ a:active {
   text-decoration: none;
   text-transform: uppercase;
   margin-left: 10px;
+
+ 
+}
+
+a:active {
+  color: #50fa7b;
 }
 
 li {
