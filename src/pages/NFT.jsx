@@ -7,7 +7,7 @@ const NFT = () => {
   return (
     <div className='container'>
       <Helmet>
-        <title>Cryptotracker | NFT</title>
+        <title>CryptoTracker | NFT</title>
         <meta name='cyrptotracker' content='nft' />
       </Helmet>
       <Navbar />

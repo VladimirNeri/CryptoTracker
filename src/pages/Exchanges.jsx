@@ -8,7 +8,7 @@ const Exchanges = () => {
   return (
     <div className='container'>
       <Helmet>
-        <title>Cryptotracker | Exchanges</title>
+        <title>CryptoTracker | Exchanges</title>
         <meta name='cryptotracker' content='Exchange' />
       </Helmet>
       <Navbar />

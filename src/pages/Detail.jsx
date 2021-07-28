@@ -8,7 +8,7 @@ const Detail = () => {
   return (
     <div className='container'>
       <Helmet>
-        <title>Cryptotracker | Detail</title>
+        <title>CryptoTracker | Detail</title>
         <meta name='cryptotracker' content='detail' />
       </Helmet>
       <Navbar />

@@ -7,7 +7,7 @@ const Defi = () => {
   return (
     <div className='container'>
       <Helmet>
-        <title>Cryptotracker | Defi</title>
+        <title>CryptoTracker | Defi</title>
         <meta name='cryptotracker' content='defi' />
       </Helmet>
       <Navbar />

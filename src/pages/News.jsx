@@ -6,7 +6,7 @@ const News = () => {
   return (
     <div className='container'>
       <Helmet>
-        <title>Cryptotracker | News</title>
+        <title>CryptoTracker | News</title>
         <meta name='cryptotracker' content='News' />
       </Helmet>
       <Navbar />
